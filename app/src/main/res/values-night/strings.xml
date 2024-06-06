@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyStoryApp</string>
+    <string name="welcome_description">Share your cherished moments, adventures, and reflections in a cozy digital space. Whether it\'s a heartfelt memory or an imaginative tale, our platform fosters connection and creativity.</string>
+    <string name="welcome_tittle">Story Hub</string>
+    <string name="sign_in">Sign in</string>
+    <string name="register">Register</string>
+    <string name="signin_welcome">Welcome back!</string>
+    <string name="signin_desc">It\'s great to see you again.</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="name">Name</string>
+    <string name="register_tittle">Let\'s Register Your Account!</string>
+    <string name="register_desc">Hello! Welcome aboard. \nLet\'s kickstart your new journey</string>
+    <string name="empty_error">Field must not be empty.</string>
+    <string name="upload_success">The photo upload has been successful</string>
+    <string name="success_regist">Congratulations, your registration has been successfully completed. Kindly proceed to sign in again.</string>
+    <string name="success_login">You have been logged in successfully.</string>
+    <string name="description">Description</string>
+    <string name="format_email_error">Please enter a valid email address format.</string>
+    <string name="new_post">New Post</string>
+    <string name="posts">Posts</string>
+    <string name="your_name">Nama Anda</string>
+    <string name="date">20 Jan 2024</string>
+    <string name="your_description">My Description</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="request_granted">Permission request granted</string>
+    <string name="request_denied">Permission request denied</string>
+    <string name="error_password">Password must be at least 8 characters long</string>
+    <string name="log_out">Log out</string>
+    <string name="upload">Upload</string>
+    <string name="home">Home</string>
+    <string name="photo_sharing">Photo Sharing</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="add_location">Tambahkan lokasi saya saat ini</string>
+</resources>

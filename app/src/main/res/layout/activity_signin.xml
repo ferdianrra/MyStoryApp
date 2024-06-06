@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Backround"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.register.RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/signinPhoto"
+            android:layout_width="340dp"
+            android:layout_height="280dp"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login_app"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/welcomeTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:text="@string/signin_welcome"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:alpha="0"
+            tools:alpha="100"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signinPhoto" />
+
+        <TextView
+            android:id="@+id/welcomeDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/signin_desc"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:alpha="0"
+            tools:alpha="100"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeTitle" />
+
+        <TextView
+            android:id="@+id/emailLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/email"
+            android:textSize="20sp"
+            android:alpha="0"
+            tools:alpha="100"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeDesc" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/emailEditTextLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:alpha="0"
+            tools:alpha="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@+id/emailLabel"
+            app:startIconDrawable="@drawable/ic_baseline_email">
+
+            <com.dicoding.mystoryapp.view.MyEmailEditText
+                android:id="@+id/ed_login_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:alpha="0"
+                tools:alpha="100"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/passwordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/password"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailEditTextLayout"
+            android:alpha="0"
+            tools:alpha="100"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordEditTextLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:endIconMode="password_toggle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordLabel"
+            app:startIconDrawable="@drawable/ic_baseline_lock_24"
+            android:alpha="0"
+            tools:alpha="100"
+            >
+
+            <com.dicoding.mystoryapp.view.MyPasswordEditText
+                android:id="@+id/ed_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPassword"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:alpha="0"
+                tools:alpha="100"/>
+
+            <TextView
+                android:id="@+id/tvErrorPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/design_default_color_error"
+                android:visibility="gone"
+                tools:visibility="visible"
+                android:text="@string/password"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/signin_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:backgroundTint="@color/purple"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="@string/sign_in"
+            android:alpha="0"
+            tools:alpha="100"
+            app:layout_constraintTop_toBottomOf="@+id/passwordEditTextLayout" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/design_default_color_on_primary"
+            android:visibility="gone"
+            android:padding="150dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="invisible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

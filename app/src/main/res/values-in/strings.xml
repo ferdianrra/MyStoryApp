@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyStoryApp</string>
+    <string name="welcome_description"> berbagi momen-momen spesial, petualangan seru, dan pikiran-pikiran dalam ruang digital yang hangat. platform kami memupuk koneksi dan kreativitas.</string>
+    <string name="welcome_tittle">Story Hub</string>
+    <string name="sign_in">Masuk</string>
+    <string name="register">Daftar</string>
+    <string name="signin_welcome">Selamat Datang!</string>
+    <string name="signin_desc">Senang melihat mu kembali.</string>
+    <string name="email">Email</string>
+    <string name="password">Kata Sandi</string>
+    <string name="name">Nama</string>
+    <string name="register_tittle">Segera Buat Akun Baru</string>
+    <string name="register_desc">Halo! Selamat bergabung. \nMari kita mulai perjalanan baru Anda</string>
+    <string name="empty_error">Semua kolom tidak boleh kosong.</string>
+    <string name="upload_success">Foto telah berhasil diupload.</string>
+    <string name="success_regist">Selamat, pendaftaran Anda telah berhasil diselesaikan. Silakan lanjutkan untuk masuk lagi.</string>
+    <string name="success_login">Anda telah berhasil login.</string>
+    <string name="description">Deskripsi</string>
+    <string name="format_email_error">Silakan masukkan format alamat email yang valid.</string>
+    <string name="new_post">Postingan Baru</string>
+    <string name="posts">Postingan</string>
+    <string name="your_name">Nama Anda</string>
+    <string name="date">20 Jan 2024</string>
+    <string name="your_description">Deskripsi Saya</string>
+    <string name="gallery">Galeri</string>
+    <string name="camera">Kamera</string>
+    <string name="request_granted">Permintaan izin diterima</string>
+    <string name="request_denied">Permintaan izin ditolak</string>
+    <string name="error_password">Kata sandi harus terdiri dari minimal 8 karakter</string>
+    <string name="log_out">Keluar</string>
+    <string name="upload">Unggah</string>
+    <string name="home">Beranda</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="photo_sharing">Berbagi Foto</string>
+    <string name="add_location">Tambahkan lokasi saya saat ini</string>
+</resources>

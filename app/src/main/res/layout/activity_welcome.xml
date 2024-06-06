@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Backround"
+    tools:context=".view.welcome.WelcomeActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/welcomePhoto"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/welcome_app"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+
+            android:id="@+id/titleWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/welcome_tittle"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:alpha="0"
+            tools:alpha="100"
+            app:layout_constraintTop_toBottomOf="@+id/welcomePhoto" />
+
+        <TextView
+            android:id="@+id/descWelcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/welcome_description"
+            android:textSize="15sp"
+            android:alpha="0"
+            tools:alpha="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleWelcome" />
+
+        <Button
+            android:id="@+id/btnSignin"
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/purple"
+            android:text="@string/sign_in"
+            android:alpha="0"
+            tools:alpha="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/descWelcome" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="380dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/register"
+            android:backgroundTint="@color/black"
+            android:alpha="0"
+            tools:alpha="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSignin" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
